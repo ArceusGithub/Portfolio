@@ -1,0 +1,121 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 19%, rgba(218,218,226,1) 31%, rgba(216,216,224,1) 31%, rgba(168,170,186,1) 52%, rgba(116,117,117,1) 100%);
+}
+.text{
+ font-family: "Times New Roman", Times, serif;
+ font-size: 7vw;
+ letter-spacing: 2px;
+ opacity: 8;
+text-shadow: 2px 2px 4px #434343;
+}
+.text-center{
+  font-family: "Times New Roman", Times, serif;
+}
+h1{
+  font-family: "Times New Roman", Times, serif;
+}
+.card :hover{
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: transform 1s;
+  border-radius: 12px;
+}
+.pic :hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 1s;
+  border-radius: 30px;
+}
+
+.nav-link{
+	text-decoration: none;
+	color: transparent;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin-bottom: 10px;
+	background: linear-gradient( 120deg, #0f0e0e 30.69%, #9f9f9f 90.69% );
+	  background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+  .navbar{
+	padding: 0%;
+  }
+  .navbar .navbar-nav .nav-item{
+	position:relative
+  }
+  .navbar .navbar-nav .nav-link{
+	padding: 1em 0;
+  }
+  .navbar .navbar-nav .nav-item{
+	margin: 0 1em 0;
+  }
+  .navbar .navbar-nav .nav-item::after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	content: "";
+	background-color:#1e1f1f;
+	width: 0%;
+	height: 2px;
+	transition:all .5s;
+  }
+  .navbar .navbar-nav .nav-item:hover:after{
+	width: 100%;
+  }
+  .moto{
+    opacity: .6;
+    font-size: 12px;
+  }
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+header {
+  background: no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.color-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 60vh;
+}
+
+.singleCol {
+  max-width: 750px;
+}
+footer {
+  background: rgb(25,26,28);
+background: linear-gradient(180deg, rgba(25,26,28,1) 0%, rgba(84,84,84,1) 64%);
+  color: wheat;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #dfdfdf;
+}
+
+@media (max-width: 767.98px) {
+  .color-overlay {
+    min-height: 30vh;
+  }
+}
